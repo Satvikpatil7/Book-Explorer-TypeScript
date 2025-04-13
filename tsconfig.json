@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // Use the latest ECMAScript version
+    "module": "esnext", // Use ESNext module system for better support of modern JS features
+    "moduleResolution": "node", // Use Node.js module resolution strategy (works well with packages in node_modules)
+    "strict": true, // Enable strict type-checking options (e.g., noImplicitAny, noImplicitThis, etc.)
+    "esModuleInterop": true, // Allow importing CommonJS modules as ES6 modules, which is helpful for compatibility
+    "skipLibCheck": true, // Skip type checking of declaration files (speeds up the build process)
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in file names (useful for cross-platform development)
+    "jsx": "react-jsx", // Enable JSX support for React 17+ JSX syntax (automatic JSX transformation)
+    "baseUrl": ".", // Base directory for resolving non-relative module imports
+    "paths": {
+      "*": ["node_modules/*"] // Alias to ensure modules are resolved from node_modules (useful in monorepos or custom setups)
+    }
+  },
+  "include": [
+    "src/**/*" // Include all TypeScript and TSX files in the src folder for compilation
+  ]
+}

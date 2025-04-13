@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "ESNext", // Use the latest ECMAScript version for the app code
+      "module": "ESNext", // Use the latest ES module system for app code
+      "moduleResolution": "node", // Use Node.js resolution algorithm for modules
+      "jsx": "react-jsx", // Enable JSX support for React 17+ syntax
+      "esModuleInterop": true, // Allow default imports from CommonJS modules
+      "strict": true, // Enable strict type-checking options
+      "noUnusedLocals": true, // Ensure no unused variables
+      "noUnusedParameters": true, // Ensure no unused parameters
+      "skipLibCheck": true, // Skip library type checking for faster compilation
+      "forceConsistentCasingInFileNames": true, // Enforce consistent casing of file names
+      "baseUrl": ".", // Base directory for resolving modules
+      "paths": {
+        "*": ["node_modules/*"]
+      }
+    },
+    "include": ["src/**/*"], // Include all files in the src directory
+    "exclude": ["node_modules", "dist"] // Exclude node_modules and dist folder from compilation
+  }
+  

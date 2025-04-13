@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2022", // Set target to the latest stable ECMAScript version compatible with your environment
+    "lib": ["ES2022"], // Remove DOM since it's not needed in a Node.js environment
+    "module": "ESNext", // Use ESNext module system
+    "moduleResolution": "node", // Safer, allows Node.js module resolution
+    "allowImportingTsExtensions": true, // Allow importing TypeScript files without extension
+    "isolatedModules": true, // Treat each file as an isolated module
+    "moduleDetection": "force", // Force module detection
+    "noEmit": true, // Prevent emitting output files (useful for type-checking only)
+    
+    /* Linting */
+    "strict": true, // Enable strict type-checking options
+    "noUnusedLocals": true, // Ensure no unused variables
+    "noUnusedParameters": true, // Ensure no unused parameters
+    "noFallthroughCasesInSwitch": true, // Prevent fallthrough cases in switch statements
+    "noUncheckedSideEffectImports": true // Prevent side effects from unchecked imports
+  },
+  "include": ["vite.config.ts"], // Include only the Vite config file (or other Node.js-specific files)
+}
